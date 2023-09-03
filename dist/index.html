@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picnic</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!-- Banner  -->
+  <div class="h-[80px] border-y-2 bg-[#7F7CAF] flex justify-center p-[60px] items-center">
+    <h1 class="text-white text-center font-bold text-5xl font-serif">GITA Picnic 2024 ( <span
+        class="text-[#41bdfb]">CSE</span> )</h1>
+  </div>
+
+
+  <!-- nav bar  -->
+  <nav class="navbar h-[60px] bg-[#392a6a] w-full">
+    <div class="navElements">
+      <ul class="font-bold hidden md:flex text-white justify-between pt-[15px] mx-8 text-xl">
+        <li><a href="#" class="hover:text-purple-500">Home</a></li>
+        <li><a href="#" class="hover:text-purple-500">About</a></li>
+        <li><a href="#" class="hover:text-purple-500">Register</a></li>
+        <li><a href="#" class="hover:text-purple-500">contact</a></li>
+        <li><a href="#" class="hover:text-purple-500">help</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- nav bar ends  -->
+
+  <!-- message  -->
+  <div class="message bg-[#C1CEFE] h-full py-7 w-full flex flex-col">
+    <h1 class="text-center text-2xl font-bold">Welcome Guys!</h1>
+    <p class="text-center text-lg font-semibold">"Unleash the Fun and Escape the Books: Join the Ultimate Picnic
+      Adventure for the CSE 2021-25 Batch - Experience Thrilling Sightseeing and Create Unforgettable Memories!"</p>
+  </div>
+  <!-- message end  -->
+
+  <main>
+    <!-- slider start  -->
+    <div class="gallery bg-[#758ECD] h-full w-full pb-8">
+      <h1 class="text-3xl font-bold text-[#100e35] py-3 text-center">Previous year captures...</h1>
+      <div class="slide-container relative w-[78%] mx-auto border-[5px] border-opacity-50 ">
+
+        <div class="slide w-[100%] h-[100%] hidden">
+          <img src="photos/pic-001.jpg" alt="image-1">
+        </div>
+
+        <div class="slide w-[100%] h-[100%] hidden">
+          <img src="photos/pic-002.jpg" alt="image-2">
+        </div>
+
+        <div class="slide w-[100%] h-[100%] hidden">
+          <img src="photos/grp-005.jpg" alt="image-3">
+        </div>
+
+        <div class="slide w-[100%] h-[100%] hidden">
+          <img src="photos/nature-003.jpg" alt="image-4">
+        </div>
+
+        <div class="slide w-[100%] h-[100%] hidden">
+          <img src="photos/grp-002.png" alt="image-5">
+        </div>
+
+
+        <div class="slide w-[100%] h-[100%] hidden">
+          <img src="photos/grp-001.png" alt="image-6">
+        </div>
+
+        <div class="slide w-[100%] h-[100%] hidden">
+          <img src="photos/nature-002.jpg" alt="image-7">
+        </div>
+
+        <div class="slide w-[100%] h-[100%] hidden">
+          <img src="photos/nature-004.jpg" alt="image-8">
+        </div>
+
+        <button id="prev"
+          class="bg-slate-600 p-3 text-xl font-bold text-white absolute top-[48%] rounded-full hover:bg-slate-300 hover:text-blue-900">&#129128;</button>
+        <button id="next"
+          class="bg-slate-600 p-3 text-xl font-bold text-white absolute top-[48%] rounded-full hover:bg-slate-300 hover:text-blue-900 right-0">&#129130;</button>
+      </div>
+    </div>
+
+    <!-- slider end -->
+
+    <!-- places to visit section  -->
+    <section>
+      <div class="places-to-visit bg-[#63458A] h-full w-full pt-8 pb-[60px] " [3px]>
+        <h1 class="text-4xl font-bold text-center pb-6 text-[#c6b13c]">Places to visit</h1>
+        <div class="container flex flex-wrap justify-evenly items-center">
+          <div class="box h-[325px] w-[30%] bg-[#f0f8ff]">
+            <div class="box-content">
+              <p class="font-bold text-xl text-center">Place 1</p>
+              <div class="image mage h-[230px] w-[95%] mx-auto"><img src="photos/picnic5.jpg" alt="image of place1">
+              </div>
+              <button
+                class="text-[#cccccc] mt-[20px] ml-[10px] text-lg bg-black p-[3px] border-[3px] border-red-600 border-solid"><a
+                  href="https://www.google.com/maps/@20.2382161,85.7212419,365m/data=!3m1!1e3?entry=ttu"
+                  target="_blank">details</a></button>
+            </div>
+          </div>
+          <div class="box h-[325px] w-[30%] bg-[#f0f8ff]">
+            <div class="box-content">
+              <p class="font-bold text-xl text-center">Place 2</p>
+              <div class="image h-[230px] w-[95%] mx-auto"><img src="photos/picnic6.jpg" alt="image of place2"></div>
+              <button
+                class="text-[#cccccc] mt-[20px] ml-[10px] text-lg bg-black p-[3px] border-[3px] border-red-600 border-solid"><a
+                  href="https://www.google.com/maps/@20.2382161,85.7212419,365m/data=!3m1!1e3?entry=ttu"
+                  target="_blank">details</a></button>
+            </div>
+          </div>
+          <div class="box h-[325px] w-[30%] bg-[#f0f8ff]">
+            <div class="box-content">
+              <p class="font-bold text-xl text-center">Place 3</p>
+              <div class="image h-[230px] w-[95%] mx-auto"><img src="photos/picnic1.jpg" alt="image of place 3"></div>
+              <button
+                class="text-[#cccccc] mt-[20px] ml-[10px] text-lg bg-black p-[3px] border-[3px] border-red-600 border-solid"><a
+                  href="https://www.google.com/maps/@20.2382161,85.7212419,365m/data=!3m1!1e3?entry=ttu"
+                  target="_blank">details</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- places to visit  -->
+
+    <!-- food section  -->
+    <section class="h-full w-full bg-[#665CC0] px-8 pt-5 pb-[60px]">
+      <h1 class="text-[#d8e7b2] font-bold text-4xl text-center pt-6 mb-8 ">Petpuja (menu)</h1>
+      <div class="food-items flex w-[100%] space-x-9">
+        <div class="veg w-[50%] bg-red-500 rounded-3xl">
+          <h1 class="text-white font-bold text-2xl text-center mt-3 py-2">Non-Veg items</h1>
+          <ul class="flex flex-col items-center text-xl font-semibold py-6 ">
+            <li>Paratha</li>
+            <li>Rice</li>
+            <li>Daal</li>
+            <li>Chicken kasa</li>
+            <li>Mutton kasa</li>
+            <li>Hidrabadi chicken</li>
+            <li>pudina chatani</li>
+            <li>Raita</li>
+            <li>Salad</li>
+            <li>Egg curry</li>
+          </ul>
+        </div>
+        <div class="non-veg w-[50%] bg-green-500 rounded-3xl">
+          <h1 class="text-white font-bold text-2xl text-center mt-3 py-2">Veg items</h1>
+          <ul class="flex flex-col items-center text-xl font-semibold py-6 ">
+            <li>Rice</li>
+            <li>Daal</li>
+            <li>Alu bhaja</li>
+            <li>Phulakobi tarkari</li>
+            <li>chutney</li>
+            <li>pampada</li>
+            <li>Salad</li>
+            <li>Sahi Panner</li>
+            <li>Paratha</li>
+            <li>khiri</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- food section ends  -->
+
+    <!-- registration form  -->
+    <section class="bg-[#63458A] h-full w-full py-[60px]">
+      <form action="" class="RegForm flex flex-col space-y-4">
+        <h1 class="text-center font-bold text-4xl text-white py-2 mb-2">Registration form</h1>
+
+        <div class="input flex flex-col items-center ">
+          <label for="name" class="text-[#E4B7E5] mb-1 font-bold text-2xl">Name:</label>
+          <input type="text" id="name" class="w-[40%] h-[40px] bg-gray- text-center text-xl text-black font-semibold"
+            name="name" placeholder="Your Name">
+        </div>
+
+        <div class=" flex flex-col items-center ">
+          <label for="RollNum" class="text-[#E4B7E5] mb-1 font-bold text-2xl">Roll Number:</label>
+          <input type="number" id="RollNum"
+            class="w-[40%] h-[40px] bg-gray-300 text-center text-xl text-black font-semibold" name="RollNum"
+            placeholder="Roll Number">
+        </div>
+
+        <div class=" flex flex-col items-center ">
+          <label for="email" class="text-[#E4B7E5] mb-1 font-bold text-2xl">Email:</label>
+          <input type="email" id="RollNum"
+            class="w-[40%] h-[40px] bg-gray-300 text-center text-xl text-black font-semibold" name="email"
+            placeholder="@gmail.com">
+        </div>
+
+        <div class="input flex flex-col items-center ">
+          <label for="PhoneNumber" class="text-[#E4B7E5] mb-1 font-bold text-2xl">Phone Number:</label>
+          <input type="numbed" id="PhNum"
+            class="w-[40%] h-[40px] bg-gray-300 text-center text-xl text-black font-semibold" name="PhoneNum"
+            placeholder="Phone number">
+        </div>
+
+        <div class="input flex flex-col items-center ">
+          <label for="WhatsappNumber" class="text-[#E4B7E5] mb-1 font-bold text-2xl">Whatsapp Number:</label>
+          <input type="text" id="wtsNum"
+            class="w-[40%] h-[40px] bg-gray-300 text-center text-xl text-black font-semibold" name="WhatsappNum"
+            placeholder="Whatsapp Number">
+        </div>
+        <div class="flex justify-center pt-4">
+          <button type="submit"
+            class="bg-black p-4 w-[200px] text-white rounded-xl text-xl font-semibold hover:text-black hover:bg-red-400  ">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- registration form end -->
+
+    <!-- suggestion section  -->
+    <section class="suggestion bg-[#7796CB] h-full w-full">
+      <form action="#" class="pt-6 pb-9">
+        <h1 class="text-center font-bold text-4xl text-[#3b126a] py-2 mb-2">Your Valuable Suggestion...</h1>
+
+        <div class="input flex flex-col items-center ">
+          <label for="name" class="text-[#684490] mb-1 font-bold text-2xl">Name:</label>
+          <input type="text" id="name" class="w-[40%] h-[40px] bg-gray- text-center text-xl text-black font-semibold"
+            name="name" placeholder="Your Name">
+        </div>
+
+        <div class=" flex flex-col items-center ">
+          <label for="RollNum" class="text-[#684490] mb-1 font-bold text-2xl">Roll Number:</label>
+          <input type="number" id="RollNum"
+            class="w-[40%] h-[40px] bg-gray-300 text-center text-xl text-black font-semibold" name="RollNum"
+            placeholder="Roll Number">
+        </div>
+
+        <div class=" flex flex-col items-center ">
+          <label for="suggestion" class="text-[#684490] mb-1 font-bold text-2xl">Your Suggetion:</label>
+          <textarea type="text" id="suggestion" class="w-[40%] h-[200px] bg-gray-300 text-xl text-black font-semibold"
+            name="suggestion" placeholder="Suggestion"></textarea>
+        </div>
+      </form>
+    </section>
+    <!-- leader section  -->
+    <section class="bg-[#061A40]  pt-9 pb-[60px] items-center h-full w-full">
+      <h1 class="text-[#c79c26] text-4xl  mb-9 font-bold text-center">Organisers:</h1>
+      <div class="organiser flex justify-evenly">
+        <div class="Leader text-white">
+          <h1 class="text-2xl font-bold font-serif text-center">Leader 1</h1>
+          <p class="text-lg font-semibold mt-3">Contact Number: <span class="text-sm text-gray-300">1234567890</span>
+          </p>
+        </div>
+        <div class=" text-white">
+          <h1 class="text-2xl font-bold font-serif text-center">Leader 2</h1>
+          <p class="text-lg font-semibold mt-3">Contact Number: <span class="text-sm text-gray-300">1234567890</span>
+          </p>
+        </div>
+        <div class="Leader text-white">
+          <h1 class="text-2xl font-bold font-serif text-center">Leader 3</h1>
+          <p class="text-lg font-semibold mt-3">Contact Number: <span class="text-sm text-gray-300">1234567890</span>
+          </p>
+        </div>
+      </div>
+
+      <hr class="mt-12 w-[50%] m-auto">
+
+      <h1 class="text-[#c79c26] text-4xl  my-9 font-bold text-center">Coordinators:</h1>
+      <div class="organiser flex justify-evenly">
+        <div class="Leader text-white">
+          <h1 class="text-2xl font-bold font-serif text-center">Leader 1</h1>
+          <p class="text-lg font-semibold mt-3">Contact Number: <span class="text-sm text-gray-300">1234567890</span>
+          </p>
+        </div>
+        <div class=" text-white">
+          <h1 class="text-2xl font-bold font-serif text-center">Leader 2</h1>
+          <p class="text-lg font-semibold mt-3">Contact Number: <span class="text-sm text-gray-300">1234567890</span>
+          </p>
+        </div>
+        <!-- <div class="Leader text-white">
+          <h1 class="text-2xl font-bold font-serif text-center">Leader 3</h1>
+          <p class="text-lg font-semibold mt-3">Contact Number: <span class="text-sm text-gray-300">1234567890</span>
+          </p>
+        </div> -->
+      </div>
+
+      <hr class="mt-12 w-[50%] m-auto">
+
+      <h1 class="text-[#c79c26] text-4xl  my-9 font-bold text-center">Teachers:</h1>
+      <div class="organiser flex justify-evenly">
+        <div class="Leader text-white">
+          <h1 class="text-2xl font-bold font-serif text-center">Teacher 1</h1>
+          <p class="text-lg font-semibold mt-3">Contact Number: <span class="text-sm text-gray-300">1234567890</span>
+          </p>
+        </div>
+        <div class=" text-white">
+          <h1 class="text-2xl font-bold font-serif text-center">Teacher 2</h1>
+          <p class="text-lg font-semibold mt-3">Contact Number: <span class="text-sm text-gray-300">1234567890</span>
+          </p>
+        </div>
+        <div class="Leader text-white">
+          <h1 class="text-2xl font-bold font-serif text-center">Teacher 3</h1>
+          <p class="text-lg font-semibold mt-3">Contact Number: <span class="text-sm text-gray-300">1234567890</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- leader section ends  -->
+  </main>
+  <footer class="h-[70px] w-full bg-[#140c1d] border-y flex justify-center items-center">
+    <div>
+      <p class="text-white font-semibold text-xl"><span class="font-semibold px-1">@</span>GITA Picnic</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
