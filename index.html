@@ -13,26 +13,40 @@
 <body>
 
   <!-- Banner  -->
-  <div class="h-[40px] md:h-[80px] border-y-2 bg-[#7F7CAF] flex justify-center md:p-[60px] items-center w-full">
-    <h1 class="text-white text-center font-bold text-xl md:text-5xl font-serif">GITA Picnic 2024 ( <span
-        class="text-[#41bdfb]">CSE</span> )</h1>
+  <!-- Menu  -->
+  <div class="nav-menu left-0 top-0 md:hidden">
+    <i class="fa-solid fa-bars text-xl text-gray-400 absolute top-[15px] left-2" id="sideBar"></i>
+    <div class="navlist hidden h-screen flex justify-center items-center flex-col w-full bg-[#ECF2FF] transition-all delay-300 linear" id="navList">
+      <i class="fa-solid fa-circle-xmark text-2xl p-2 absolute top-[15px] right-[10px]" id="cross"></i>
+      <ul class="flex flex-col gap-[2rem] font-bold text-xl items-center justify-center mx-auto">
+        <li><a href="#" class="hover:text-purple-400 hover:underline uppercase text-purple-700">Home</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline uppercase text-purple-700">About</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline uppercase text-purple-700">Register</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline uppercase text-purple-700">contact</a></li>
+        <li><a href="#" class="hover:text-purple-400 hover:underline uppercase text-purple-700">help</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="h-[60px] md:h-[80px] border-y-2 bg-[#7F7CAF] flex justify-evenly md:p-[60px] items-center w-full">
+    <!-- heading  -->
+    <div class=" flex  flex-col md:flex-row md:space-x-4 justify-center">
+      <h1 class="text-white text-center font-bold text-xl md:text-5xl font-serif">GITA</h1>
+      <h1 class="text-white text-center font-bold text-xl md:text-5xl font-serif">Picnic 2024 ( <span
+          class="text-[#41bdfb]">CSE</span> )</h1>
+    </div>
   </div>
 
-  <!-- Menu  -->
-  <!-- <div class="nav-menu flex justify-between ">
-    <h1 class="font-bold text-3xl">Picnic</h1>
-    <i class="fa-solid fa-bars"></i>
-  </div> -->
+
 
   <!-- nav bar  -->
   <nav class="hidden md:block navbar h-[60px] bg-[#392a6a] w-full">
     <div class="navElements">
       <ul class="font-bold hidden md:flex text-white justify-between pt-[15px] mx-8 text-xl">
-        <li><a href="#" class="hover:text-purple-500">Home</a></li>
-        <li><a href="#" class="hover:text-purple-500">About</a></li>
-        <li><a href="#" class="hover:text-purple-500">Register</a></li>
-        <li><a href="#" class="hover:text-purple-500">contact</a></li>
-        <li><a href="#" class="hover:text-purple-500">help</a></li>
+        <li><a href="#" class="hover:text-purple-500 font-bold">Home</a></li>
+        <li><a href="#" class="hover:text-purple-500 font-bold">About</a></li>
+        <li><a href="#" class="hover:text-purple-500 font-bold">Register</a></li>
+        <li><a href="#" class="hover:text-purple-500 font-bold">contact</a></li>
+        <li><a href="#" class="hover:text-purple-500 font-bold">help</a></li>
       </ul>
     </div>
   </nav>
@@ -52,7 +66,8 @@
     <!-- slider start  -->
     <div class="gallery bg-[#758ECD] h-full w-full pb-8">
       <h1 class="md:text-3xl font-bold text-[#100e35] py-3 text-center">Previous year captures...</h1>
-      <div class="slide-container relative w-[95%] md:w-[80%] mx-auto border-[5px] border-opacity-50 ">
+      <div class="slide-container relative w-[95%] md:w-[80%] mx-auto border-[5px] border-opacity-50 "
+        id="gallery">
 
         <div class="slide w-[100%] h-[100%] hidden">
           <img src="photos/pic-001.jpg" alt="image-1">
@@ -88,9 +103,11 @@
         </div>
 
         <button id="prev"
-          class="bg-slate-600 top-[45%] p-1 md:p-3  md:text-xl md:font-bold text-white absolute md:top-[48%] rounded-full hover:bg-slate-300 hover:text-blue-900"><i class="fa-solid fa-arrow-left"></i></button>
+          class="bg-slate-600 top-[45%] p-1 md:p-3  md:text-xl md:font-bold text-white absolute md:top-[48%] rounded-full hover:bg-slate-300 hover:text-blue-900"><i
+            class="fa-solid fa-arrow-left"></i></button>
         <button id="next"
-          class="bg-slate-600 top-[45%] p-1 md:p-3 md:text-xl md:font-bold text-white absolute md:top-[48%] rounded-full hover:bg-slate-300 hover:text-blue-900 right-0"><i class="fa-solid fa-arrow-right"></i></button>
+          class="bg-slate-600 top-[45%] p-1 md:p-3 md:text-xl md:font-bold text-white absolute md:top-[48%] rounded-full hover:bg-slate-300 hover:text-blue-900 right-0"><i
+            class="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
 
@@ -104,7 +121,8 @@
           <div class="box rounded-3xl h-full w-[90%]   md:h-[400px] md:w-[30%] bg-[#f0f8ff]">
             <div class="box-content ">
               <p class="font-bold text-xl text-center mt-4 py-3">Place 1</p>
-              <div class="image sm:w-[450px] md:w-[90%] w-[90%] mx-auto"><img src="photos/picnic5.jpg" alt="image of place1">
+              <div class="image sm:w-[450px] md:w-[90%] w-[90%] mx-auto"><img src="photos/picnic5.jpg"
+                  alt="image of place1">
               </div>
               <button
                 class="text-[#cccccc] sm:mt-3  mt-4 mb-4 md:mt-[30px] mx-[38%] md:ml-[20px] text-lg bg-black p-[5px] border-[3px] border-red-600 border-solid"><a
@@ -115,7 +133,8 @@
           <div class="box rounded-3xl w-[90%] h-full  md:h-[400px] md:w-[30%] bg-[#f0f8ff]">
             <div class="box-content ">
               <p class="font-bold text-xl text-center mt-4 py-3">Place 2</p>
-              <div class="image sm:w-[450px]  md:w-[90%] w-[90%] mx-auto"><img src="photos/picnic6.jpg" alt="image of place2"></div>
+              <div class="image sm:w-[450px]  md:w-[90%] w-[90%] mx-auto"><img src="photos/picnic6.jpg"
+                  alt="image of place2"></div>
               <button
                 class="text-[#cccccc] sm:mt-3  mt-4 mb-4 md:mt-[30px] mx-[38%] md:ml-[20px] text-lg bg-black p-[3px] border-[3px] border-red-600 border-solid"><a
                   href="https://www.google.com/maps/@20.2382161,85.7212419,365m/data=!3m1!1e3?entry=ttu"
@@ -125,7 +144,8 @@
           <div class="box rounded-3xl w-[90%]  md:h-[ 400px] md:w-[30%] bg-[#f0f8ff]">
             <div class="box-content ">
               <p class="font-bold text-xl text-center mt-4 py-3">Place 3</p>
-              <div class="image sm:w-[450px] md:w-[90%] w-[90%] mx-auto"><img src="photos/picnic1.jpg" alt="image of place 3"></div>
+              <div class="image sm:w-[450px] md:w-[90%] w-[90%] mx-auto"><img src="photos/picnic1.jpg"
+                  alt="image of place 3"></div>
               <button
                 class="text-[#cccccc] sm:mt-3  mt-4 mb-4 md:mt-[30px] mx-[38%] md:ml-[20px] text-lg bg-black p-[3px] border-[3px] border-red-600 border-solid"><a
                   href="https://www.google.com/maps/@20.2382161,85.7212419,365m/data=!3m1!1e3?entry=ttu"
